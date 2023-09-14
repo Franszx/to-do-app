@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" src="./js/script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="apph1">To-Do App</h1>
+    <div class="border_div">
+      <div class="main_div">
+        <div class="first">
+          <input type="text" id="listNameInput" placeholder="List Name" />
+          <button id="createListButton">Add new list</button>
+          <div id="listsContainer">
+            <h2>Lists</h2>
+            <ul id="listMenu"></ul>
+          </div>
+        </div>
+        <div class="second">
+          <div id="taskListContainer">
+            <h2>List: <span id="activeListName"></span></h2>
+            <input type="text" id="taskDescriptionInput" placeholder="Task" />
+            <input type="number" id="taskQuantityInput" placeholder="Pieces" />
+            <button id="addTaskButton">Add Task</button>
+          </div>
+          <div class="tasks_flex">
+              <ul id="todoList"></ul>
+              <h5>Done</h5>
+                <ul id="doneList"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
