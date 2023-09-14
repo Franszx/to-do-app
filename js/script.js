@@ -99,8 +99,8 @@ addTaskButton.addEventListener("click", () => {
 
 // Render tasks in the active list
 function updateTaskList() {
-  todoList.innerHTML = "todo";
-  doneList.innerHTML = "done";
+  todoList.innerHTML = "";
+  doneList.innerHTML = "";
   if (activeList && lists[activeList]) {
     lists[activeList].forEach((task) => {
       const taskItem = document.createElement("li");

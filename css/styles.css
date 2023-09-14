@@ -129,9 +129,9 @@ ul {
   color: white;
   text-decoration: none !important;
 }
-#createListButton:hover:after {
+/* #createListButton:hover:after {
   content: " YES!";
-}
+} */
 #taskListContainer {
   margin-bottom: 10px;
 }
@@ -177,9 +177,9 @@ ul {
   font-weight: 500;
 }
 
-#addTaskButton:hover:after {
+/* #addTaskButton:hover:after {
   content: " YES!";
-}
+} */
 #todoList button {
   cursor: pointer;
   background-color: white;
@@ -196,6 +196,8 @@ ul {
   display: flex;
   cursor: pointer;
   padding-top: 10px;
+  color: var(--another-color);
+  font-size: 18px;
 }
 #todoList {
   border-bottom: solid black 1px;
@@ -207,6 +209,8 @@ ul {
 }
 #doneList li {
   cursor: pointer;
+  color: var(--another-color);
+  font-size: 18px;
 }
 #doneList button {
   border-style: none;
@@ -229,6 +233,7 @@ ul {
   margin-top: 5px;
   list-style: none;
   border-bottom: 1px solid #ccc;
+  font-size: 22px;
 }
 #listMenu li:hover {
   cursor: pointer;
@@ -261,4 +266,8 @@ ul {
   cursor: pointer;
   padding: 0 12px 0 12px;
   border-radius: 5px;
+}
+.done_h5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
