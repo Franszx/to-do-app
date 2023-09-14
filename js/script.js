@@ -51,7 +51,7 @@ function addDeleteListButtons() {
 }
 // Render the lists in the sidebar
 function updateTodoList() {
-  listMenu.innerHTML = "";
+  listMenu.innerHTML = "My Lists";
   for (const listName in lists) {
     const listItem = document.createElement("li");
     listItem.textContent = listName;
@@ -99,8 +99,8 @@ addTaskButton.addEventListener("click", () => {
 
 // Render tasks in the active list
 function updateTaskList() {
-  todoList.innerHTML = "";
-  doneList.innerHTML = "";
+  todoList.innerHTML = "todo";
+  doneList.innerHTML = "done";
   if (activeList && lists[activeList]) {
     lists[activeList].forEach((task) => {
       const taskItem = document.createElement("li");
@@ -132,10 +132,11 @@ function updateTaskList() {
       if (task.done) {
         taskItem.classList.add("done");
         taskItem.appendChild(undoButton);
+        taskItem.appendChild(deleteButton);
         doneList.appendChild(taskItem);
       } else {
         taskItem.appendChild(doneButton);
-        taskItem.appendChild(deleteButton);
+
         todoList.appendChild(taskItem);
       }
     });
