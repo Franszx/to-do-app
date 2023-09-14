@@ -51,7 +51,7 @@ function addDeleteListButtons() {
 }
 // Render the lists in the sidebar
 function updateTodoList() {
-  listMenu.innerHTML = "My Lists";
+  listMenu.innerHTML = "";
   for (const listName in lists) {
     const listItem = document.createElement("li");
     listItem.textContent = listName;
